@@ -1,0 +1,6 @@
+$Id: Changelog 2003/10/02 13:35 $
+
+version 0.13 (2003/10/02):
+
+	- started changelog
+	- fixed a bug which prevented access to messages with ID 1000+
