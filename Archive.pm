@@ -1,5 +1,5 @@
 # ===========================================================================
-# Archive.pm - version 0.10 - 11/04/2003
+# Archive.pm - version 0.11 - 12/04/2003
 #
 # Object methods for ezmlm-idx archives
 #
@@ -43,7 +43,7 @@ use vars qw($VERSION *MONTHS);
 use Carp;
 require 5.002;
 
-$VERSION = '0.10';
+$VERSION = '0.11';
 
 %MONTHS = ( Jan => 1, Feb => 2, Mar => 3, Apr => 4, May => 5, Jun => 6,
 			Jul => 7, Aug => 8, Sep => 9, Oct => 10, Nov => 11, Dec => 12 );
