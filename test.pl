@@ -3,6 +3,6 @@ use strict;
 use Test;
 BEGIN { plan tests => 1 }
 
-use Your::Module::Here; ok(1);
+use Mail::Ezmlm::Archive; ok(1);
 exit;
 __END__

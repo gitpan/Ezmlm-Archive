@@ -7,7 +7,7 @@ Object methods for accessing ezmlm-idx archives.
 This software is beta release. As such, please treat it with the appropriate 
 amount of caution. Let me know if you find any bugs, etc.
 
-Install by doing the following ...
+Install by doing the following:
 # perl Makefile.PL
 # make install
 

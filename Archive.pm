@@ -1,5 +1,5 @@
 # ===========================================================================
-# Archive.pm - version 0.11 - 12/04/2003
+# Archive.pm - version 0.12 - 12/04/2003
 #
 # Object methods for ezmlm-idx archives
 #
@@ -43,7 +43,7 @@ use vars qw($VERSION *MONTHS);
 use Carp;
 require 5.002;
 
-$VERSION = '0.11';
+$VERSION = '0.12';
 
 %MONTHS = ( Jan => 1, Feb => 2, Mar => 3, Apr => 4, May => 5, Jun => 6,
 			Jul => 7, Aug => 8, Sep => 9, Oct => 10, Nov => 11, Dec => 12 );
@@ -200,30 +200,30 @@ This version is designed to work with ezmlm 0.53 and ezmlm-idx 0.40.
 
 =head1 DESCRIPTION
 
-=head2 Setting up a new Archive object:
+=head2 Setting up a new Archive object
 
 	use Mail::Ezmlm::Archive;
 	$archive = Mail::Ezmlm::Archive->new('/path/to/list/folder');
 
-=head2 Changing which list the Archive object points at:
+=head2 Changing which list the Archive object points at
 
 	$archive->setlist('/full/path/to/other/list');
 
-=head2 Getting count of archived messages:
+=head2 Getting count of archived messages
 
 	$message_count = $archive->getcount;
 
 Actually the getcount methods reads message count from DIR/num file, so we'd 
 better consider the result as count of distributed messages instead of archived.
 
-=head2 Getting a list of months:
+=head2 Getting a list of months
 
 	@available_months = $archive->getmonths;
 
 This returns an array of strings in the 'YYYYMM' format, such as '200304', which 
 represent months for which we have archived messages.
 
-=head2 Getting a list of threads in a given month:
+=head2 Getting a list of threads in a given month
 
 	$threads = $archive->getthreads('200304');
 
@@ -250,7 +250,7 @@ Thread Id.
 
 The date of last message in the thread, as archived in DIR/archived/threads/$month
 
-=head2 Getting list of messages in a given thread:
+=head2 Getting list of messages in a given thread
 
 	$messages = $archive->getthread('nknmgklhcgijmbonmbkk');
 
@@ -302,7 +302,7 @@ No methods for author-based browsing.
 
 Not enough object oriented, maybe? :-)
 
-=head 1 AVAILABILITY
+=head1 AVAILABILITY
 
 You can download the latest version from CPAN ( http://search.cpan.org ). 
 You are very welcome to write mail to the author (alex@primafila.net) with 
